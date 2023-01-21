@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <button id="disable-blur-button" type="button" onclick="disableBlur()">Disable Blur</button>
+    <button id="enable-blur-button" type="button" onclick="enableBlur()">Enable Blur</button>
+    <container id="all-container">  
+        
+        <section id= "section-left">
+            <div class="left-section-div" id="img-div">
+                <img src="foto.png" id="left-section-div-img" class="animate__animated animate__fadeInLeft animate__delay-0s">
+            </div>
+            <div class="left-section-div" id="contact-div">
+                <div class="left-section-content-div blur" style="filter:blur(3px)">
+                    <p > <b>CONTACTO</b> </p>
+                    <ul class="fa-ul" id="contact-list">
+                        <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>bianchi.i.oscar@gmail.com</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>(+54)342 4323354</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-globe"></i></span>www.oscarbianchi.com</li>
+                        <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span>@oscarbiach</li>
+                        <li id="freelancer"><span class="fa-li"  ><i id="freelancer-icon"class="fa-solid fa-briefcase"></i></span>freelancer.com/u/BianchiOscar</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="left-section-div" id="profile-div">
+                <div class="left-section-content-div blur" style="filter:blur(3px)" >
+                    <p > <b>PERFIL</b> </p>
+                    <ul class="fa-ul" id="profile-list">
+                        <li><span class="fa-li"><i class="fa-solid fa-child" ></i></span>Edad -> 18 años </li>
+                        <li><span class="fa-li"><i class="fa-solid fa-calendar-days"></i></span>Nacimiento -> 24/04/2004</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-location-pin"></i></span>Localidad -> Santa Fe</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-passport"></i></span> Nacionalidad -> Argentina </li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="left-section-div" id="language-div">
+                <div class="left-section-content-div blur" style="filter:blur(3px)">
+                    <p > <b>IDIOMA</b> </p>
+                    <ul class="fa-ul" id="language-list">
+                        <li><span class="fa-li"><i class="fa-solid fa-child"></i></span> Ingles Intermedio / Avanzado </li>
+                        <li><span class="fa-li"><i class="fa-solid fa-calendar-days"></i></span> Estudios en la universidad de Cambridge </li>
+                        <li><span class="fa-li"><i class="fa-solid fa-location-pin"></i></span>Nivel C1 Advanced</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-passport"></i></span> Comenzando estudios en Francés </li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="left-section-div" id="abilitys-div">
+                <div class="left-section-content-div blur" style="filter:blur(3px)">
+                    <p  > <b>HABILIDADES</b> </p>
+                    <ul class="fa-ul" id="abilitys-list">
+                        <li><span class="fa-li"><i class="fa-brands fa-html5"></i></span> HTML </li>
+                        <li><span class="fa-li"><i class="fa-brands fa-css3-alt"></i></span>CSS</li>
+                        <li><span class="fa-li"><i class="fa-brands fa-square-js"></i></span>JAVASCRIPT</li>
+                        <li><span class="fa-li"><i class="fa-brands fa-react"></i></span> REACT </li>    
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-right">
+            <div class="right-section-div" id="name-div" >
+                <h1 class="animate__animated animate__fadeInLeft animate__delay-0s">
+                    OSCAR IGNACIO <br> BIANCHI 
+                </h1>
+                <h2 class="animate__animated animate__fadeInLeft animate__delay-0s">
+                    Front End Developer
+                </h2>
+            </div>
+            <div class="right-section-div" id="experience-div">
+                <div class="right-section-content-div blur" style="filter:blur(3px)">
+                    <ul class="fa-ul" id="experience-list">
+                        <p  id="experience-div-p"> <b> EXPERIENCIA </b> </p>
+                        <h3 class="experience-div-h3">Freelancer Junior/Mid Front End Developer</h3>
+                        <h4 class="experience-div-h4">2018-2020</h4>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>www.ejemplotrabajo1.com</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>www.ejemplotrabajo2.com</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>www.ejemplotrabajo2.com</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>www.ejemplotrabajo2.com</li>    
+                    </ul>
+                    <ul class="fa-ul" id="experience-list">
+                        <h3 class="experience-div-h3">Freelancer Senior Front End Developer</h3>
+                        <h4 class="experience-div-h4">2020-2023</h4>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>www.ejemplotrabajo1.com</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>www.ejemplotrabajo2.com</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>www.ejemplotrabajo2.com</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>www.ejemplotrabajo2.com</li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section-div" id="education-div">
+                <div class="right-section-content-div blur" style="filter:blur(3px)">
+                    <ul class="fa-ul" id="experience-list">
+                        <p id="experience-div-p"> <b> EDUCACION </b> </p>
+                        <h3 class="experience-div-h3">Ing. en Sistemas - UTN</h3>
+                        <h4 class="experience-div-h4">2022-2027</h4>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>Primer año</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>Segundo año</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>Tercer año - Tecnicatura en Sistemas de Informacion</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>Cuarto año</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>Quinto año - Tesis - Titulo de Ingeniero en Sistemas de Informacion<li>
+                    </ul>
+                    <ul class="fa-ul" id="experience-list">
+                        <h3 class="experience-div-h3">Estudios Extra</h3>
+                        <h4 class="experience-div-h4">2022-2027</h4>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>Argentina Programa 4.0</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>Codo a Codo Argentina 2023</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>Proyecto Oracle One Web Design - Certificado</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-arrow-right"></i></span>Cursos no certificados en SEO y Back End Developing</li>    
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </container>
+    <script src="https://kit.fontawesome.com/6d325c487b.js" crossorigin="anonymous"></script>
+    <script src="code.js"></script>    
+</body>
